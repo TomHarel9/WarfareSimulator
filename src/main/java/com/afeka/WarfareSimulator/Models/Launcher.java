@@ -2,12 +2,19 @@ package com.afeka.WarfareSimulator.Models;
 
 import java.util.ArrayList;
 
+import com.afeka.WarfareSimulator.Interfaces.Destructed;
+
 public class Launcher {
 	
 	private String id;
 	private boolean isHidden;
 	private ArrayList<Missile> missiles;
 	
+	public Launcher(String id, boolean isHidden, ArrayList<Missile> missiles) {
+		this.id = id;
+		this.isHidden = isHidden;
+		this.missiles = new ArrayList<>(missiles);
+	}
 	
 	public String getId() {
 		return id;

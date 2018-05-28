@@ -2,11 +2,19 @@ package com.afeka.WarfareSimulator.Models;
 
 public class Missile{
 	
-	private Location destination;
-	private double launchTime;
-	private double flyTime;
-	private double damage;
+	protected String id;
+	protected Location destination;
+	protected double launchTime;
+	protected double flyTime;
+	protected double damage;
 	
+	public Missile (String id, Location destination, double launchTime, double flyTime, double damage) {
+		this.id = id;
+		this.destination = destination;
+		this.launchTime = launchTime;
+		this.flyTime = flyTime;
+		this.damage = damage;
+	}
 	public Location getDestination() {
 		return destination;
 	}

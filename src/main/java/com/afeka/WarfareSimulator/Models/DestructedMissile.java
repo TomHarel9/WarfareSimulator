@@ -2,18 +2,15 @@ package com.afeka.WarfareSimulator.Models;
 
 import com.afeka.WarfareSimulator.Interfaces.Destructed;
 
-public class DestructedMissile implements Destructed{
+public class DestructedMissile extends Missile implements Destructed{
 	
-	private String id;
 	private double destructAfterLaunch;
 	
+	public DestructedMissile(Missile missile, double destructAfterLaunch) {
+		super(missile.)
+		this.
+	}
 	
-	public String getTarget() {
-		return id;
-	}
-	public void setTarget(String target) {
-		this.id = target;
-	}
 	public double getDestructAfterLaunch() {
 		return destructAfterLaunch;
 	}
